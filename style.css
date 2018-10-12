@@ -1,15 +1,17 @@
 body{
     background-color:grey !important;
+
+    margin:none;
 }
 
 
-ul{
+  ul{
     list-style-type: none;
     display:block;
 
 }
 
-ul li{
+ .menu ul li{
     float:left;
     background-color: black;
     color:white;
@@ -19,7 +21,7 @@ ul li{
     cursor:pointer;
 }
 
-li:hover{
+.menu ul li:hover{
     background-color:#333333;
 }
 
@@ -30,6 +32,14 @@ form{
     margin-top:10px;
 }
 
-.row:first-child{
-    padding-bottom:20px;
+
+
+#data{
+    color:white;
+}
+
+.list-group-item:hover{
+    cursor:pointer;
+    background-color:gray;
+
 }
