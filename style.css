@@ -5,6 +5,7 @@ body{
 
 ul{
     list-style-type: none;
+    display:block;
 
 }
 
@@ -29,6 +30,6 @@ form{
     margin-top:10px;
 }
 
-.buttons{
-    
+.row:first-child{
+    padding-bottom:20px;
 }
