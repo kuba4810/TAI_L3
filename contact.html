@@ -10,75 +10,90 @@
 </head>
 
 <body>
-
-        <div>
-                <a href="index.html">
-                        <h1>Strona główna</h1>
-                </a>
-        </div>
+                <nav class="navbar navbar-inverse">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
+                                        <a class="navbar-brand" href="index.html">Strona główna</a>
+                                    </div>
+                                    <div class="collapse navbar-collapse" id="myNavbar">
+                                        <ul class="nav navbar-nav mainMenu">
+                                            <li><a href="#">Blog</a></li>
+                                            <li><a href="quiz.html">Quiz</a></li>
+                                            <li><a href="contact.html">Kontakt</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
 
         <div class="container-fluid">
                 <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-sm-2 col-md-4 col-lg-3"></div>
+                        <div class="col-sm-8 col-md-4 col-lg-6">
 
-                                <form>
-                                        <fieldset>
-                                                <legend>Uzupełnij dane:</legend>
-
-                                                <div class="form-group">
-                                                        <label for="firstName">Imię:</label>
-                                                        <input type="text" class="form-control" name="firstName"
-                                                                placeholder="Podaj imię...">
-                                                </div>
-
-                                                <div class="form-group">
-                                                        <label for="lastName">Nazwisko:</label>
-                                                        <input type="text" class="form-control" name="lastName"
-                                                                placeholder="Podaj nazwisko...">
-                                                </div>
-
-                                                <div class="form-group">
-                                                        <label for="email">Email:</label>
-                                                        <input type="email" class="form-control" name="email"
-                                                                placeholder="Podaj E-Mail">
-                                                </div>
-
-
-
-                                                <label for="gender">Płeć:</label> <br>
-                                                <div class="checkbox">
-                                                        <input type="radio" name="gender" value="male"> Mężczyzna
-                                                        <input type="radio" name="gender" value="female"> Kobieta
-                                                </div>
-
-
-
-                                                <div class="form-group">
-                                                        <label for="description">Opis:</label>
-                                                        <textarea name="description" class="form-control" id="" cols="30"
-                                                                rows="5"></textarea>
-                                                </div>
-
-                                                <label for="age">Wiek</label>
-                                                <input type="number" class="form-control" min="18" max="120" value="18">
-
-                                                <label for="stan_cywilny">Stan cywilny:</label>
-                                                <select name="stan_cywilny" class="form-control" id="">
-                                                        <option value="single">Panna/Kawaler</option>
-                                                        <option value="relationship">W związku</option>
-
-                                                </select>
-
-
-
-                                                <div class="btn-group">
-                                                        <button class="btn btn-danger">Wyczyść</button>
-                                                        <button class="btn btn-success">Wyślij</button>
-                                                </div>
-
-                                        </fieldset>
-                                </form>
-                        </div>
+                                        <form>
+                                                <fieldset>
+                                                        <legend>Uzupełnij dane:</legend>
+        
+                                                        <div class="form-group">
+                                                                <label for="firstName">Imię:</label>
+                                                                <input type="text" class="form-control" name="firstName"
+                                                                        placeholder="Podaj imię...">
+                                                        </div>
+        
+                                                        <div class="form-group">
+                                                                <label for="lastName">Nazwisko:</label>
+                                                                <input type="text" class="form-control" name="lastName"
+                                                                        placeholder="Podaj nazwisko...">
+                                                        </div>
+        
+                                                        <div class="form-group">
+                                                                <label for="email">Email:</label>
+                                                                <input type="email" class="form-control" name="email"
+                                                                        placeholder="Podaj E-Mail">
+                                                        </div>
+        
+        
+        
+                                                        <label for="gender">Płeć:</label> <br>
+                                                        <div class="checkbox">
+                                                                <input type="radio" name="gender" value="male"> Mężczyzna
+                                                                <input type="radio" name="gender" value="female"> Kobieta
+                                                        </div>
+        
+        
+        
+                                                        <div class="form-group">
+                                                                <label for="description">Opis:</label>
+                                                                <textarea name="description" class="form-control" id="" cols="30"
+                                                                        rows="5"></textarea>
+                                                        </div>
+        
+                                                        <label for="age">Wiek</label>
+                                                        <input type="number" class="form-control" min="18" max="120" value="18">
+        
+                                                        <label for="stan_cywilny">Stan cywilny:</label>
+                                                        <select name="stan_cywilny" class="form-control" id="">
+                                                                <option value="single">Panna/Kawaler</option>
+                                                                <option value="relationship">W związku</option>
+        
+                                                        </select>
+        
+        
+        
+                                                        <div class="btn-group">
+                                                                <button class="btn btn-danger">Wyczyść</button>
+                                                                <button class="btn btn-success">Wyślij</button>
+                                                        </div>
+        
+                                                </fieldset>
+                                        </form>
+                                </div>
+                        <div class="col-sm-2 col-md-4 col-lg-3" ></div>
                 </div>
         </div>
 

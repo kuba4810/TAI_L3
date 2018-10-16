@@ -1,5 +1,20 @@
 
 var questions = null;
+var isQuizRunning = false;
+
+var startQuiz = document.getElementById("startQuiz");
+
+startQuiz.addEventListener('click',function(){
+
+    console.log("Działa kliknięcie!");
+    if(!isQuizRunning){
+        isQuizRunning = true;
+        document.getElementById("timeProgress").classList.remove("invisible");
+        document.getElementById("progress").classList.remove("invisible");
+        startQuiz.classList.add("invisible");        
+    }
+    loadJSON(prepareQuiz);
+});
 
 
 function loadJSON(callback) {
@@ -17,9 +32,7 @@ function loadJSON(callback) {
 
 }
 
-
-// Call to function with anonymous callback
-loadJSON(function (response) {
+var prepareQuiz = function (response) {
 
     questions = JSON.parse(response);
     console.log(questions);
@@ -43,11 +56,9 @@ loadJSON(function (response) {
             showScoreHistory();
         }
     },10);
-
-
-
-
-});
+}
+// Call to function with anonymous callback
+//loadJSON(prepareQuiz)
 
 
 
@@ -85,7 +96,11 @@ function showQuestion(q) {
 }
 
 
-//localStorage.setItem("resultHistory","[]");
+
+//console.log("Typ historii: ", typeof(localStorage.getItem("resultHistory")));
+if(JSON.parse(localStorage.getItem("resultHistory")) === null){
+    localStorage.setItem("resultHistory","[]");
+}
 
 
 var resultHistory = JSON.parse(localStorage.getItem("resultHistory"));
@@ -174,8 +189,8 @@ for (i; answers.length; i++) {
                 index = index + 1;
                 question = questions[index];
                 showQuestion(question);
-                document.getElementById("progress").style.width = progresBarWidth + "0%";
-                document.getElementById("progress").innerHTML = progresBarWidth + "/10";
+                document.getElementById("progressBar").style.width = progresBarWidth + "0%";
+                document.getElementById("progressBar").innerHTML = progresBarWidth + "/10";
                 e.target.removeAttribute("style");
 
             }, 1000);
@@ -217,4 +232,10 @@ for (i; answers.length; i++) {
 
     });
 
+
+
 }
+
+
+
+

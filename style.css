@@ -66,12 +66,12 @@ form{
     margin:0;
     padding:0;
 }
-
+/*
 .center {
     margin: 0 auto;
     width: 60%;
 }
-
+*/
 .invisible{
     display:none;
 }
@@ -88,3 +88,7 @@ form{
     color:white;
 }
 
+.startQuiz{
+    width:100%;
+    margin: 5px 0px 5px 0px;
+}
