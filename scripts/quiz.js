@@ -11,6 +11,12 @@ startQuiz.addEventListener('click',function(){
         isQuizRunning = true;
         document.getElementById("timeProgress").classList.remove("invisible");
         document.getElementById("progress").classList.remove("invisible");
+        document.getElementById("answers").classList.remove("collapse");
+
+        document.querySelector(".questionText").classList.remove("textCenter");
+
+        document.querySelector(".quizHeader").classList.add("invisible");
+
         startQuiz.classList.add("invisible");        
     }
     loadJSON(prepareQuiz);
