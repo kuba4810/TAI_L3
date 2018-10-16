@@ -1,10 +1,28 @@
 body{
     background-color:grey !important;
-
     margin:none;
 }
+a{
+    color:white !important;
+    text-decoration: none !important;
+}
 
+.menu{
+    width:100%;
+}
 
+ul.mainMenu li{
+    color:white;
+    text-align: center;
+    cursor:pointer;
+    transition:.2s ease;
+}
+
+ul.mainMenu li:hover{
+    background-color:#0d0d0d;
+}
+
+/*
   ul{
     list-style-type: none;
     display:block;
@@ -24,7 +42,7 @@ body{
 .menu ul li:hover{
     background-color:#333333;
 }
-
+*/
 form{
     background-color: white;
     padding: 10px;
@@ -57,3 +75,16 @@ form{
 .invisible{
     display:none;
 }
+
+.historyData{
+    background-color:cornsilk;
+    color: black;
+    
+}
+
+.inside{
+    height:200px;
+    background-color: red;
+    color:white;
+}
+

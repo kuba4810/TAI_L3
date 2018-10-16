@@ -1,62 +1,62 @@
-[
+ [
     {
         "id":1,
          "question": "Ile wynosi 2+2 ?",
          "answers": [4,2,6,1],
-         "correctAnswer": "2"
+         "correctAnswer": "4"
     },
     {
         "id":2,
-         "question": "Ile wynosi 2+2 ?",
-         "answers": [4,2,6,1],
-         "correctAnswer": "2"
+         "question": "Jaka jest stolica Polski?",
+         "answers": ["Kraków","Tarnów","Warszawa","Gdańsk"],
+         "correctAnswer": "Warszawa"
     },
     {
         "id":3,
-         "question": "Ile wynosi 2+2 ?",
-         "answers": [4,2,6,1],
-         "correctAnswer": "2"
+         "question": "Najdłuższa rzeka w Polsce to ...",
+         "answers": ["Warta","Odra","Bug","Wisła"],
+         "correctAnswer": "Wisła"
     },
     {
         "id":4,
-         "question": "Ile wynosi 2+2 ?",
-         "answers": [4,2,6,1],
-         "correctAnswer": "2"
+         "question": "Ile stanów ma USA?",
+         "answers": [51,10,0,120],
+         "correctAnswer": "51"
     },
     {
         "id":5,
-         "question": "Ile wynosi 2+2 ?",
-         "answers": [4,2,6,1],
-         "correctAnswer": "2"
+         "question": "Jak miał na imię główny bohater serialu Wikingowie?",
+         "answers": ["Ragnar","Horik","Lagherta","Floki"],
+         "correctAnswer": "Ragnar"
     },
     {
         "id":6,
-         "question": "Ile wynosi 2+2 ?",
-         "answers": [4,2,6,1],
-         "correctAnswer": "2"
+         "question": "Ile w Polsce jest województw ?",
+         "answers": [12,16,44,67],
+         "correctAnswer": 16
     },
     {
         "id":7,
-         "question": "Ile wynosi 2+2 ?",
-         "answers": [4,2,6,1],
-         "correctAnswer": "2"
+         "question": "Co to jest nic?",
+         "answers": ["to poprostu nic","a co to nic","no nic","Pól litra na dwoch"],
+         "correctAnswer": "Pól litra na dwoch"
     },
     {
         "id":8,
-         "question": "Ile wynosi 2+2 ?",
-         "answers": [4,2,6,1],
-         "correctAnswer": "2"
+         "question": "Kto jest mistrzem tego samego oręża, w jakim specjalizowała się mitologiczna Artemida?",
+         "answers": ["Zorro","Legolas","Don Kichot","Longinus Podbipięta"],
+         "correctAnswer": "Legolas"
     },
     {
         "id":9,
-         "question": "Ile wynosi 2+2 ?",
-         "answers": [4,2,6,1],
-         "correctAnswer": "2"
+         "question": "Likier maraskino produkuje się z maraski, czyli odmiany:",
+         "answers": ["Wiśni", "Jabłoni","Figi","Gruszy"],
+         "correctAnswer": "Wiśni"
     },
     {
         "id":10,
-         "question": "Ile wynosi 2+2 ?",
-         "answers": [4,2,6,1],
-         "correctAnswer": "2"
+         "question": "Skąd pochodził Conan Barbarzyńca?",
+         "answers": ["Z Rivi","Z Mordoru" , "Z oz" , "Z Cimmerri"],
+         "correctAnswer": "Z Cimmerri"
     }
 ]

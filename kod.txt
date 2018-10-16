@@ -1,0 +1,12 @@
+<div class="col menu">
+                <ul class="mainMenu">
+                    <li class=""> 
+                        <a href="index.html">
+                            Strona g³ówna
+                        </a></li>
+                    <li class="" >Blog</li>
+                    <li class="" ><a href="quiz.html">Quiz</a></li>
+                    <li class="" ><a href="contact.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </div>
