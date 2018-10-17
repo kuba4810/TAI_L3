@@ -19,7 +19,15 @@ ul.mainMenu li{
 }
 
 ul.mainMenu li:hover{
-    background-color:#0d0d0d;
+    text-shadow: 0 0 10px white;
+    
+}
+
+.navbar-brand{
+    transition: .2s ease;
+}
+.navbar-brand:hover{
+    text-shadow: 0px 0px 20px white;
 }
 
 /*
@@ -99,4 +107,31 @@ form{
 
 .textCenter{
     text-align:center;
+}
+
+.starDiv{
+    display:flex;
+    align-items: center;
+}
+
+.start{
+    display:flex;
+    flex-direction: row-reverse;
+}
+.starDiv i{
+    font-size:20px;
+    padding:5px;
+    cursor:pointer;
+
+}
+.starDiv i:hover, .starDiv i:hover ~ i {
+    color:gold;
+}
+
+.starDiv .starDivTitle{
+    font-size:30px;
+    /*background-color:black;*/
+    display:inline-block;
+    padding-right:10px;
+
 }

@@ -1,6 +1,7 @@
 
 var questions = null;
 var isQuizRunning = false;
+var isClicked = false;
 
 var startQuiz = document.getElementById("startQuiz");
 
@@ -165,6 +166,11 @@ var i = 0;
 for (i; answers.length; i++) {
     answers[i].addEventListener('click', function (e) {
 
+    
+
+    if(!isClicked){
+        isClicked = true;
+        
         clearInterval(myInterval);
         var userAnswer = e.target.textContent;
 
@@ -181,6 +187,7 @@ for (i; answers.length; i++) {
         }
 
         if (index < 9) {
+            
             clearInterval(myInterval);
             time = 11;
             progresBarWidth = progresBarWidth + 1;
@@ -198,12 +205,13 @@ for (i; answers.length; i++) {
                 document.getElementById("progressBar").style.width = progresBarWidth + "0%";
                 document.getElementById("progressBar").innerHTML = progresBarWidth + "/10";
                 e.target.removeAttribute("style");
+                isClicked = false;
 
             }, 1000);
 
         } else {
             time = 11;
-
+            isClicked = true;
             setTimeout(function () {
                 var summary = localStorage.getItem("result");
                 document.querySelector(".score").innerHTML = "Udało Ci się ukończyć Quiz ! Twój wynik to : " + summary;
@@ -234,6 +242,7 @@ for (i; answers.length; i++) {
 
         }
 
+    }
 
 
     });
